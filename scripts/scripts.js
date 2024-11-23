@@ -10,8 +10,8 @@ You are encouraged to use the provided naming convention for ease of review.
 /* create variables to hold the values for modelName and duration */
 
 // INSERT YOUR CODE HERE
-var modelName = 'XYZ'
-var duration = 0
+var modelName = 'XYZ';
+var duration = 0;
 
 
 
@@ -28,14 +28,15 @@ var duration = 0
 
 // INSERT YOUR CODE HERE
 
+var cost = 0;
 function recalculate() {
     let costLabel = document.getElementById("calculated-cost");
     if (modelName === 'XYZ'){
-        var cost = (duration * 100)}
+        cost = (duration * 100);}
     else {
-        var cost = (duration * 213)}
+        cost = (duration * 213);}
     
-    costLabel.innerHTML = (cost)
+    costLabel.innerHTML = (cost);
 
 
     }
@@ -59,16 +60,16 @@ function recalculate() {
 
 // INSERT YOUR CODE HERE
 
-modelButton = document.getElementById('model-button')
+var modelButton = document.getElementById('model-button');
 function changeModel(){
-    let modelText = document.getElementById("model-text")
+    let modelText = document.getElementById("model-text");
     if (modelName === 'XYZ'){
         modelName = 'CPRG';
         modelText.innerHTML = ('Model CPRG');}
     else{
         modelName = 'XYZ';
         modelText.innerHTML = ('Model XYZ');}
-    recalculate()
+    recalculate();
 }
 modelButton.addEventListener("click", changeModel);
 
@@ -88,12 +89,12 @@ modelButton.addEventListener("click", changeModel);
 
 // INSERT YOUR CODE HERE
 
-var durationButton = document.getElementById('duration-button')
+var durationButton = document.getElementById('duration-button');
 
 function changeDuration(){
-    let durationText = document.getElementById('duration-text')
-    duration = prompt('Set the Duration')
-    durationText.innerHTML = duration 
-    recalculate()
+    let durationText = document.getElementById('duration-text');
+    duration = prompt('Set the Duration');
+    durationText.innerHTML = duration ;
+    recalculate();
 }
-durationButton.addEventListener("click",changeDuration)
+durationButton.addEventListener("click",changeDuration);
